@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="testApp" ng-controller="AppCtrl as App">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Test Project</title>
+
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7/css/bootstrap-theme.min.css">
+
+    <link href="lib/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href="lib/dashboard.css" rel="stylesheet">
+
+    <script src="lib/ie-emulation-modes-warning.js"></script>
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2">
+            <input type="text" name="first_factor" ng-model="first_factor">
+            <input type="text" name="second_factor" ng-model="second_factor">
+            <input type="button" name="sum" value="Sum" ng-click="sum()">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 col-md-2">
+            <span>Sum is {{sum_sum}}</span>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="lib/bootstrap-3.3.7/js/bootstrap.min.js" ></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="lib/holder.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="lib/ie10-viewport-bug-workaround.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+<script src="lib/angular-base64-upload.min.js"></script>
+<script src="lib/ng-file-upload.min.js"></script>
+
+<script src="api/angular-config.js"></script>
+
+<script src="app/app.js"></script>
+<script src="app/app.controller.js"></script>
+</body>
+</html>
